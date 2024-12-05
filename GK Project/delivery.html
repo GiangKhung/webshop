@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="/GK Project/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <link rel="webstie icon" type="png" href="/GK Project/image/IMG_logo.png" />
     <title>Shop-GK</title>
@@ -15,13 +15,15 @@
   <body>
     <header>
       <div class="logo">
-        <img src="image/IMG_logo.png" alt="" width="40" />
+        <a href="/GK Project/inedex.html"
+          ><img src="/GK Project/image/IMG_logo.png" alt="" width="40"
+        /></a>
       </div>
       <div class="Menu">
         <li>
           <a href="">Nữ</a>
           <ul class="sub-menu">
-            <li><a href="/GK Project/cartegory.html">Hàng Mới Về</a></li>
+            <li><a href="">Hàng Mới</a></li>
             <li><a href="">Collection</a></li>
             <li>
               <a href="">Áo</a>
@@ -131,23 +133,135 @@
         <li><a class="fa fa-shopping-bag" href=""></a></li>
       </div>
     </header>
-    <section id="Slider">
-      <div class="aspect-ratio-169">
-        <img src="image/slide1.jpeg" alt="slide1" />
-        <img src="image/slide2.jpeg" alt="slide2" />
-        <img src="image/slide3.jpeg" alt="slide3" />
-        <img src="image/slide4.jpeg" alt="slide4" />
-        <img src="image/slide5.jpeg" alt="slide5" />
+
+    <!-----------------------------------Delivery-------------------------------->
+    <section class="delivery">
+      <div class="container">
+        <div class="delivery-top-wrap">
+          <div class="delivery-top">
+            <div class="delivery-top-delivery delivery-top-item">
+              <i class="fas fa-shopping-cart cart-top-item"></i>
+            </div>
+            <div class="delivery-top-adress delivery-top-item">
+              <i class="fa fa-map-marker-alt cart-top-item"></i>
+            </div>
+            <div class="delivery-top-payment delivery-top-item">
+              <i class="fa fa-solid fa-money-check-dollar cart-top-item"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="dot-container">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+      <div class="cotainer">
+        <div class="delivery-content row">
+          <div class="delivery-content-left">
+            <p>Vui lòng chọn địa chỉ giao hàng</p>
+            <div class="delivery-content-left-dangnhap row">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <p>Đăng nhập nếu bạn đã có tài khoản Shop GK</p>
+            </div>
+            <div class="delivery-content-left-khachle row">
+              <input checked name="loaikhach" type="radio" />
+              <p>
+                <span style="font-weight: bold">Khách lẻ</span> (Nếu bạn không
+                muốn lưu lại thông tin)
+              </p>
+            </div>
+            <div class="delivery-content-left-dangky row">
+              <input type="radio" />
+              <p>
+                <span style="font-weight: bold">Đăng ký</span> (Tạo mới tài
+                khoản với thông tin bên dưới)
+              </p>
+            </div>
+            <div class="delivery-content-left-input-top row">
+              <div class="delivery-content-left-input-top-item">
+                <label for="">Họ tên<span style="color: red">*</span></label>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="delivery-content-left-input-top-item">
+                <label for=""
+                  >Điện thoại<span style="color: red">*</span></label
+                >
+                <input type="text" name="" id="" />
+              </div>
+              <div class="delivery-content-left-input-top-item">
+                <label for=""
+                  >Tỉnh/Thành phố<span style="color: red">*</span></label
+                >
+                <input type="text" name="" id="" />
+              </div>
+              <div class="delivery-content-left-input-top-item">
+                <label for=""
+                  >Quận/Huyện<span style="color: red">*</span></label
+                >
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <div class="delivery-content-left-input-bottom">
+              <label for="">Phường/Xã<span style="color: red">*</span></label>
+              <input type="text" name="" id="" />
+            </div>
+            <div class="delivery-content-left-input-bottom">
+              <label for="">Địa chỉ<span style="color: red">*</span></label>
+              <input type="text" name="" id="" />
+            </div>
+          </div>
+          <div class="delivery-content-right">
+            <table>
+              <tr>
+                <th>Tên sản phẩm</th>
+                <th>Giảm giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+              </tr>
+              <tr>
+                <td>Áo sơ mi tay ngắn có họa tiết</td>
+                <td>-30%</td>
+                <td>1</td>
+                <td>
+                  <p>790.000<sup>đ</sup></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Quần tây âu vải thun mềm thoáng mát</td>
+                <td>-20%</td>
+                <td>1</td>
+                <td>
+                  <p>990.000<sup>đ</sup></p>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold" colspan="3">Tổng</td>
+                <td style="font-weight: bold" colspan="3">
+                  1.780.000<sup>đ</sup>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold" colspan="3">Thuế VAT</td>
+                <td style="font-weight: bold" colspan="3">
+                  <p>79.000<sup>đ</sup></p>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold" colspan="3">Tổng tiền hàng</td>
+                <td style="font-weight: bold" colspan="3">
+                  <p>1.859.000<sup>đ</sup></p>
+                </td>
+              </tr>
+            </table>
+            <div class="delivery-content-left-button row">
+              <a href=""><span>&#171;</span>Quay lại giỏ hàng</a>
+              <a href="/GK Project/payment.html">
+                <button>
+                  <p style="font-weight: bold">THANH TOÁN VÀ GIAO HÀNG</p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-----------------------------------app-container-------------------------------->
+    <!-----------------------------------Footer-------------------------------->
     <section class="app-container">
       <p>Tải ứng dụng Shop-GK</p>
       <div class="app-google">
@@ -157,7 +271,6 @@
       <p>Nhận bản tin Shop-GK</p>
       <input type="text" placeholder="Nhập email của bạn..." />
     </section>
-    <!-----------------------------------footer-------------------------------->
     <div class="footer-top">
       <li>
         <a href=""><img src="image/img-congthuong.png" alt="" /></a>
@@ -166,9 +279,9 @@
       <li><a href=""></a>Tuyển dụng</li>
       <li><a href=""></a>Giới thiệu</li>
       <li>
-        <a href="" class="fa fa-facebook-f"></a>
-        <a href="" class="fa fa-twitter"></a>
-        <a href="" class="fa fa-youtube"></a>
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-brands fa-twitter"></a>
+        <a href="" class="fa-brands fa-youtube"></a>
       </li>
     </div>
     <div class="footer-center">

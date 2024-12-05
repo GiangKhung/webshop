@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="/GK Project/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <link rel="webstie icon" type="png" href="/GK Project/image/IMG_logo.png" />
     <title>Shop-GK</title>
@@ -15,13 +15,15 @@
   <body>
     <header>
       <div class="logo">
-        <img src="image/IMG_logo.png" alt="" width="40" />
+        <a href="/GK Project/inedex.html"
+          ><img src="/GK Project/image/IMG_logo.png" alt="" width="40"
+        /></a>
       </div>
       <div class="Menu">
         <li>
           <a href="">Nữ</a>
           <ul class="sub-menu">
-            <li><a href="/GK Project/cartegory.html">Hàng Mới Về</a></li>
+            <li><a href="">Hàng Mới</a></li>
             <li><a href="">Collection</a></li>
             <li>
               <a href="">Áo</a>
@@ -131,23 +133,110 @@
         <li><a class="fa fa-shopping-bag" href=""></a></li>
       </div>
     </header>
-    <section id="Slider">
-      <div class="aspect-ratio-169">
-        <img src="image/slide1.jpeg" alt="slide1" />
-        <img src="image/slide2.jpeg" alt="slide2" />
-        <img src="image/slide3.jpeg" alt="slide3" />
-        <img src="image/slide4.jpeg" alt="slide4" />
-        <img src="image/slide5.jpeg" alt="slide5" />
+
+    <!-----------------------------------Cart-------------------------------->
+    <section class="cart">
+      <div class="container">
+        <div class="cart-top-wrap">
+          <div class="cart-top">
+            <div class="cart-top-cart cart-top-item">
+              <i class="fas fa-shopping-cart cart-top-item"></i>
+            </div>
+            <div class="cart-top-adress cart-top-item">
+              <i class="fa fa-map-marker-alt cart-top-item"></i>
+            </div>
+            <div class="cart-top-payment cart-top-item">
+              <i class="fa fa-solid fa-money-check-dollar cart-top-item"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="dot-container">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+      <div class="container">
+        <div class="cart-container row">
+          <div class="cart-content-left">
+            <table>
+              <tr>
+                <th>Sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Size</th>
+                <th>SL</th>
+                <th>Thành tiền</th>
+                <th>Xóa</th>
+              </tr>
+              <tr>
+                <td><img src="image/IMG_1.JPG" alt="" /></td>
+                <td><p>Áo sơ mi tay ngắn có họa tiết</p></td>
+                <td><p>L</p></td>
+                <td><input type="number" value="1" min="1" /></td>
+                <td>
+                  <p>790.000<sup>đ</sup></p>
+                </td>
+                <td><span>X</span></td>
+              </tr>
+              <tr>
+                <td><img src="image/IMG_5.JPG" alt="" /></td>
+                <td><p>Quần tây âu vải thun mềm thoáng mát</p></td>
+                <td><p>L</p></td>
+                <td><input type="number" value="1" min="1" /></td>
+                <td>
+                  <p>990.000<sup>đ</sup></p>
+                </td>
+                <td><span>X</span></td>
+              </tr>
+            </table>
+          </div>
+          <div class="cart-content-right">
+            <table>
+              <tr>
+                <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+              </tr>
+              <tr>
+                <td>TỔNG SẢN PHẨM</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>TỔNG TIỀN HÀNG</td>
+                <td>
+                  <p>1.780.000<sup>đ</sup></p>
+                </td>
+              </tr>
+              <tr>
+                <td>TẠM TÍNH</td>
+                <td>
+                  <p style="color: rgb(0, 0, 0); font-weight: bold">
+                    1.780.000<sup>đ</sup>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <div class="cart-content-right-text">
+              <p>
+                Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng giá trị
+                trên 2.000.000 đ
+              </p>
+              <p style="color: red; font-weight: bold">
+                Mua thêm <span style="font-size: 18px">131.000đ</span> để được
+                miễn phí SHIP
+              </p>
+            </div>
+            <div class="cart-content-right-button">
+              <button>TIẾP TỤC MUA SẮM</button>
+              <a href="/GK Project/delivery.html">
+                <button>THANH TOÁN</button>
+              </a>
+            </div>
+            <div class="cart-content-right-dangnhap">
+              <p>TÀI KHOẢN GK</p>
+              <br />
+              <p>
+                Hãy <a href="">Đăng nhập</a> tài khoản để tích điểm thành viên
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-----------------------------------app-container-------------------------------->
+    <!-----------------------------------Footer-------------------------------->
     <section class="app-container">
       <p>Tải ứng dụng Shop-GK</p>
       <div class="app-google">
@@ -157,7 +246,6 @@
       <p>Nhận bản tin Shop-GK</p>
       <input type="text" placeholder="Nhập email của bạn..." />
     </section>
-    <!-----------------------------------footer-------------------------------->
     <div class="footer-top">
       <li>
         <a href=""><img src="image/img-congthuong.png" alt="" /></a>
